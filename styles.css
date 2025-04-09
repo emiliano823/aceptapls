@@ -1,0 +1,90 @@
+body {
+    /* ya no necesitas el background aquí */
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    position: relative; /* para que todo esté encima del fondo */
+}
+
+
+.blur-fondo {
+    background-image: url("cherry.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: -2; /* Asegura que quede detrás del contenido */
+}
+
+
+.bloques-encabezado{
+    z-index: 1;
+    background-image: url("cobble.png");
+    background-repeat: repeat-x;
+    background-size: 10vh;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 510;
+    -webkit-text-stroke: 2px aliceblue;
+    text-align: center;
+    font-family: 'Silkscreen', consolas;
+}
+
+.pregunta{
+    border-radius: .5rem;
+    background-image: url("tierra.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    position: relative;
+    padding-top: 1rem;
+    margin-inline: 2vh;
+    width: auto;
+    height: auto;
+    align-items: center ;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    -webkit-text-stroke: 1px rgba(240, 248, 255, 0.73);
+    font-family: 'Silkscreen', consolas;
+}
+.fondo-tierra{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input{
+    border-radius: .5rem;
+    height: 4rem;
+    width: 8rem;
+    font-family: 'Silkscreen', consolas;
+    margin: 1rem;
+    border-style: none;
+    font-size: larger;
+
+}
+
+#si{
+    color: rgb(161, 238, 161);
+    background-color: green;
+    box-shadow: 0px 0px 30px rgb(20, 255, 20) ;
+}
+
+#no{
+    color: rgb(243, 146, 146);
+    background-color: red;
+    box-shadow: 0px 0px 30px rgb(255, 30, 30) ;
+}
